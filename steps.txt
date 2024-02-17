@@ -12,3 +12,6 @@ dapp
 - npm run dev
 - open port
 - npm i ethers
+
+feb 17
+- npx harhat test
