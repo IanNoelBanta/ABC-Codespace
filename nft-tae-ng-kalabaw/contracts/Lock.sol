@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 contract tae is ERC721URIStorage {
     uint256 private _nextTokenId;
 
-    constructor() ERC721("tae ", "t3") {}
+    constructor() ERC721("tae ", "t43") {}
 
     function safeMint() external {
         uint256 tokenId = _nextTokenId++;
