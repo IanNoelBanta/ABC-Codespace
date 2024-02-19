@@ -2,8 +2,8 @@ const { expect } = require('chai');
 
 async function main() {
   const [owner] = await ethers.getSigners();
-  const initialSupply = ethers.parseUnits("1000", 18);
-  const myTokenContract = await await hre.ethers.deployContract("MyToken", [initialSupply, owner.address]);
+  // const initialSupply = ethers.parseUnits("1000", 18);
+  const myTokenContract = await hre.ethers.deployContract("MyToken", [owner.address]);
   await myTokenContract.waitForDeployment();
 
   const ethAmount = ethers.parseUnits("10", 18);
